@@ -20,12 +20,12 @@ const Vote = () => {
 
     const stepChecks = [
         [],
-        ['index'],
-        ['index', 'president'],
-        ['index', 'president', 'vice'],
-        ['index', 'president', 'vice', 'pro'],
-        ['index', 'president', 'vice', 'pro', 'deputee'],
-        ['index', 'president', 'vice', 'pro', 'deputee', 'school'],
+        ['index', 'name'],
+        ['index', 'president', 'name'],
+        ['index', 'president', 'vice', 'name'],
+        ['index', 'president', 'vice', 'pro', 'name'],
+        ['index', 'president', 'vice', 'pro', 'deputee', 'name'],
+        ['index', 'president', 'vice', 'pro', 'deputee', 'school', 'name'],
     ];
 
     const [step, setStep] = useState(0);
@@ -95,11 +95,11 @@ const Vote = () => {
 
                                 <Row hidden={step !== 1}>
                                     <Col lg={5} sm={5}>
-                                        {/* <FormGroup>
-                                    <Form.Item label="Name" name="name" rules={[{ required: true }]}>
-                                        <Input type="text" size="large" disabled={submitting} />
-                                    </Form.Item>
-                                </FormGroup> */}
+                                        <FormGroup>
+                                            <Form.Item label="Name" name="name" rules={[{ required: true }]}>
+                                                <Input type="text" size="large" disabled={submitting} />
+                                            </Form.Item>
+                                        </FormGroup>
                                         <FormGroup>
                                             <Form.Item label="Index number" name="index" rules={[{ required: true }]}>
                                                 <Input addonBefore="GHMS" type="text" size="large" disabled={submitting} />
