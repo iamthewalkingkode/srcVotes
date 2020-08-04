@@ -1,0 +1,31 @@
+body {
+    background-color: #efefef;
+    color: #555;
+}
+
+.voting-container {
+    // width: 700px;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    .form {
+        padding: 20px;
+        background-color: #fff;
+        margin-top: 20px;
+    }
+}
+
+.img-thumbnail {
+    border: 0px;
+}
+
+.ant-btn-primary {
+    background: #202020;
+    border-color: #202020;
+
+    &:hover {
+        background: #000;
+        border-color: #000;
+    }
+}
